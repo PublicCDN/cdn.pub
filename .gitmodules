@@ -1,20 +1,5 @@
-[submodule "jquery/1.11.0"]
-	path = jquery/1.11.0
-	url = git@github.com:jquery/jquery.git
-[submodule "jquery/1.11.1"]
-	path = jquery/1.11.1
-	url = git@github.com:jquery/jquery.git
 [submodule "jquery/1.11.2"]
 	path = jquery/1.11.2
-	url = git@github.com:jquery/jquery.git
-[submodule "jquery/2.1.0"]
-	path = jquery/2.1.0
-	url = git@github.com:jquery/jquery.git
-[submodule "jquery/2.1.1"]
-	path = jquery/2.1.1
-	url = git@github.com:jquery/jquery.git
-[submodule "jquery/2.1.2"]
-	path = jquery/2.1.2
 	url = git@github.com:jquery/jquery.git
 [submodule "jquery/2.1.3"]
 	path = jquery/2.1.3
