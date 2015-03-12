@@ -19,12 +19,3 @@
 [submodule "angular-strap/2.2.1"]
 	path = angular-strap/2.2.1
 	url = git@github.com:mgcrea/angular-strap.git
-[submodule "font-awesome/4.1.0"]
-	path = font-awesome/4.1.0
-	url = git@github.com:FortAwesome/Font-Awesome.git
-[submodule "font-awesome/4.2.0"]
-	path = font-awesome/4.2.0
-	url = git@github.com:FortAwesome/Font-Awesome.git
-[submodule "font-awesome/4.3.0"]
-	path = font-awesome/4.3.0
-	url = git@github.com:FortAwesome/Font-Awesome.git
