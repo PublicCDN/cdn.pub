@@ -4,4 +4,5 @@ cd `dirname $0`
 jquery/sync.sh
 bootstrap/sync.sh
 Font-Awesome/sync.sh
-./sync-angular.sh
+angular/sync.sh
+

@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 cd `dirname $0`
+cd ..
 ######################################################################
 exec aws s3 sync ./ s3://cdn.pub/ \
 --region ap-northeast-1 \
