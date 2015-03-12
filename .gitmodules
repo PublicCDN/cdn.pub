@@ -25,3 +25,6 @@
 [submodule "bootswatch/3.3.2"]
 	path = bootswatch/3.3.2
 	url = git@github.com:thomaspark/bootswatch.git
+[submodule "angular-strap/2.2.1"]
+	path = angular-strap/2.2.1
+	url = git@github.com:mgcrea/angular-strap.git
