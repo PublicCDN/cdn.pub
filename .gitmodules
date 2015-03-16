@@ -61,3 +61,6 @@
 [submodule "angular-animate/1.3.14"]
 	path = angular-animate/1.3.14
 	url = git@github.com:angular/bower-angular-animate.git
+[submodule "requirejs/2.1.16"]
+	path = requirejs/2.1.16
+	url = git@github.com:jrburke/requirejs.git
