@@ -2,6 +2,7 @@
 set -e
 name=`basename $0 .sh`
 [ "$1" = ""     ] && echo "$0 version"      && exit 1
+./angular.sh $1
 ./angular-messages.sh $1
 ./angular-touch.sh $1
 ./angular-scenario.sh $1
