@@ -64,3 +64,6 @@
 [submodule "requirejs/2.1.16"]
 	path = requirejs/2.1.16
 	url = git@github.com:jrburke/requirejs.git
+[submodule "html5shiv/3.7.2"]
+	path = html5shiv/3.7.2
+	url = git@github.com:aFarkas/html5shiv.git
