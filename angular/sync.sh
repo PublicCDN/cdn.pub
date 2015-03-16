@@ -20,5 +20,5 @@ exec aws s3 sync ./ s3://cdn.pub/ \
 --include 'angular-i18n/*' \
 --include 'angular-cookies/*' \
 --include 'angular-aria/*' \
---include 'angular-animate/*'
-
+--include 'angular-animate/*' \
+--exclude 'angular/sync.sh'

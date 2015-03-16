@@ -2,7 +2,7 @@
 set -e
 cd `dirname $0`
 ######################################################################
-exec aws s3 sync ./ s3://cdn.pub/bootstrap/ \
+exec aws s3 sync ./ s3://cdn.pub/bootswatch/ \
 --region ap-northeast-1 \
 --size-only \
 --cache-control "max-age=315360000" \
@@ -24,4 +24,5 @@ exec aws s3 sync ./ s3://cdn.pub/bootstrap/ \
 --include '*/united/*' \
 --include '*/yeti/*' \
 --include '*/fonts/*' \
+--include '*/assets/*' \
 --exclude '*/bower_components/*'

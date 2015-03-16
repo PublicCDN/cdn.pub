@@ -7,5 +7,5 @@ exec aws s3 sync ./ s3://cdn.pub/angular-strap/ \
 --size-only \
 --cache-control "max-age=315360000" \
 --exclude '*' \
---include '*/dist/*' \
+--include '*/dist/*' 
 
