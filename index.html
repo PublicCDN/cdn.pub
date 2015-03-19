@@ -1,25 +1,33 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Punlic CDN</title>
-<link rel="stylesheet" href="https://cdn.pub/bootstrap/3.3.2/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.pub/bootstrap/3.3.2/dist/css/bootstrap-theme.min.css">
-
-<!--
-<link rel="stylesheet" href="https://cdn.pub/bootswatch/3.3.2/yeti/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.pub/bootswatch/3.3.2/assets/css/bootswatch.min.css">
--->
-
-<link rel="stylesheet" href="https://cdn.pub/Font-Awesome/4.3.0/css/font-awesome.min.css">
+<title>Public CDN</title>
+<link rel="stylesheet" href="//cdn.pub/bootstrap/3.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="//cdn.pub/bootstrap/3.3.2/dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//cdn.pub/Font-Awesome/4.3.0/css/font-awesome.min.css">
 <!--[if lt IE 9]>
-	<script src="https://cdn.pub/html5shiv/3.7.2/dist/html5shiv.min.js"></script>
-	<script src="https://cdn.pub/Respond/1.4.2/dest/respond.min.js"></script>
+	<script src="//cdn.pub/html5shiv/3.7.2/dist/html5shiv.min.js"></script>
+	<script src="//cdn.pub/Respond/1.4.2/dest/respond.min.js"></script>
 <![endif]-->
 <style>
 body {
-  padding-top: 60px;
+  padding-top: 65px;
+}
+#social > li {
+	vertical-align:top;
+}
+input[type="url"] {
+	background-color: rgba(255,255,255,0);
+	width: 100%;
+	border-style: none;
+}
+#library .name {
+	white-space: nowrap;
+}
+#library .version {
+	white-space: nowrap;
 }
 </style>
 </head>
@@ -36,7 +44,7 @@ body {
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-			<a href="https://cdn.pub/" class="navbar-brand">Public CDN</a>
+			<a href="http://cdn.pub/" class="navbar-brand">Public CDN</a>
 		</div>
 		<div class="navbar-collapse collapse" id="navbar">
 			<ul class="nav navbar-nav">
@@ -46,84 +54,172 @@ body {
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
-				<aside style="width:100%" class="text-right">
-					<ul class="list-inline right">
-						<li><div class="g-plusone"></div></li>
-						<li>twitter </li>
-						<li>facebook</li>
-						<li>hatena  </li>
-						<li><button class="btn navbar-btn btn-danger" data-toggle="modal" data-target="#donate">donate</button></li>
-					</ul>
-				</aside>
+				<li><button class="btn navbar-btn btn-danger" data-toggle="modal" data-target="#donate">donate</button></li>
 			</ul>
+
 		</div>
 	</div>
 </nav>
-<header>
-	<div id="decription">
+<!-- -----------------------------------------------------------------
+     Header
+  -- ----------------------------------------------------------------- -->
+<header class="container">
+	<div class="col-xs-6" id="decription">
 		<p>High Performance and High Availability and Free!</p>
 		<p>Contents Delivery Network of OSS(Open Source Software).</p>
 		<p>This site is made up in the <a href="#donate" data-toggle="modal">donation</a> of everyone.</p>
 	</div>
+	<aside class="text-center col-xs-6">
+		<ul id="social" class="list-inline">
+			<li><div class="g-plusone" data-size="tall" data-href="http://cdn.pub/"></div></li>
+			<li><a href="https://twitter.com/share" data-count="vertical" class="twitter-share-button" data-url="http://cdn.pub/">Tweet</a></li>
+			<li><a href="http://b.hatena.ne.jp/entry/http://cdn.pub/" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="en" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+			<li><div class="fb-like" data-href="http://cdn.pub/" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
+		</ul>
+	</aside>
 </header>
 <!-- -----------------------------------------------------------------
      Contents
   -- ----------------------------------------------------------------- -->
-<div class="container">
-	<dl>
-		<dt>jquery</dt>
-		<dd>
-			aaa
-		</dd>
-	</dl>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-</div>
+<article class="container">
+	<table class="table table-striped" id="library">
+		<thead>
+			<tr>
+				<td class="name">library</td>
+				<td class="version">version</td>
+				<td class="link">link</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="name">jquery</td>
+				<td class="version">1.11.2</td>
+				<td class="link"><input type="url" value="//cdn.pub/jquery/1.11.2/dist/jquery.min.js"></td>
+			</tr>
+			<tr>
+				<td class="name">jquery</td>
+				<td class="version">2.1.3</td>
+				<td class="link"><input type="url" value="//cdn.pub/jquery/2.1.3/dist/jquery.min.js"></td>
+			</tr>
+			<tr>
+				<td class="name">Font-Awesome</td>
+				<td class="version">4.3.0</td>
+				<td class="link"><input type="url" value="//cdn.pub/Font-Awesome/4.3.0/css/font-awesome.min.css"></td>
+			</tr>
+			<tr>
+				<td class="name">html5shiv</td>
+				<td class="version">3.7.2</td>
+				<td class="link"><input type="url" value="//cdn.pub/html5shiv/3.7.2/dist/html5shiv.min.js"></td>
+			</tr>
+			<tr>
+				<td class="name">requirejs</td>
+				<td class="version">2.1.16</td>
+				<td class="link"><input type="url" value="//cdn.pub/requirejs/2.1.16/require.js"></td>
+			</tr>
+			<tr>
+				<td class="name">bootstrap</td>
+				<td class="version">3.3.2</td>
+				<td class="link">
+					<input type="url" value="//cdn.pub/bootstrap/3.3.2/dist/js/bootstrap.min.js">
+					<input type="url" value="//cdn.pub/bootstrap/3.3.2/dist/css/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootstrap/3.3.2/dist/css/bootstrap-theme.min.css">
+				</td>
+			</tr>
+			<tr>
+				<td class="name">bootstrap</td>
+				<td class="version">3.3.1</td>
+				<td class="link">
+					<input type="url" value="//cdn.pub/bootstrap/3.3.1/dist/js/bootstrap.min.js">
+					<input type="url" value="//cdn.pub/bootstrap/3.3.1/dist/css/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootstrap/3.3.1/dist/css/bootstrap-theme.min.css">
+				</td>
+			</tr>
+			<tr>
+				<td class="name">bootstrap</td>
+				<td class="version">3.3.0</td>
+				<td class="link">
+					<input type="url" value="//cdn.pub/bootstrap/3.3.0/dist/js/bootstrap.min.js">
+					<input type="url" value="//cdn.pub/bootstrap/3.3.0/dist/css/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootstrap/3.3.0/dist/css/bootstrap-theme.min.css">
+				</td>
+			</tr>
+			<tr>
+				<td class="name">Respond</td>
+				<td class="version">1.4.2</td>
+				<td class="link">
+					<input type="url" value="//cdn.pub/Respond/1.4.2/dest/respond.min.js">
+					<input type="url" value="//cdn.pub/Respond/1.4.2/dest/respond.matchmedia.addListener.min.js">
+				</td>
+			</tr>
+			<tr>
+				<td class="name">angular</td>
+				<td class="version">1.3.14</td>
+				<td class="link">
+					<input type="url" value="//cdn.pub/angular/1.3.14/angular.min.js">
+					<input type="url" value="//cdn.pub/angular-messages/1.3.14/angular-messages.min.js">
+					<input type="url" value="//cdn.pub/angular-animate/1.3.14/angular-animate.min.js">
+					<input type="url" value="//cdn.pub/angular-mocks/1.3.14/angular-mocks.min.js">
+					<input type="url" value="//cdn.pub/angular-aria/1.3.14/angular-aria.min.js">
+					<input type="url" value="//cdn.pub/angular-touch/1.3.14/angular-touch.min.js">
+					<input type="url" value="//cdn.pub/angular-resource/1.3.14/angular-resource.min.js">
+					<input type="url" value="//cdn.pub/angular-cookies/1.3.14/angular-cookies.min.js">
+					<input type="url" value="//cdn.pub/angular-route/1.3.14/angular-route.min.js">
+					<input type="url" value="//cdn.pub/angular-i18n/1.3.14/angular-i18n.min.js">
+					<input type="url" value="//cdn.pub/angular-sanitize1.3.14/angular-sanitize.min.js">
+					<input type="url" value="//cdn.pub/angular-loader/1.3.14/angular-loader.min.js">
+					<input type="url" value="//cdn.pub/angular-scenario/1.3.14/angular-scenario.min.js">
+				</td>
+			</tr>
+			<tr>
+				<td class="name">angular-strap</td>
+				<td class="version">2.2.1</td>
+				<td class="link">
+					<input type="url" value="//cdn.pub/angular-strap/2.2.1/dist/angular-strap.min.js">
+					<input type="url" value="//cdn.pub/angular-strap/2.2.1/dist/angular-strap.tpl.min.js">
+				</td>
+			</tr>
+			<tr>
+				<td class="name">bootswatch</td>
+				<td class="version">3.3.2</td>
+				<td class="link">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/assets/css/bootswatch.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/assets/js/bootswatch.js">
+					<!-- -->
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/cerulean/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/cosmo/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/custom/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/cyborg/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/darkly/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/flatly/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/journal/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/lumen/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/paper/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/readable/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/sandstone/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/simplex/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/slate/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/spacelab/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/superhero/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/united/bootstrap.min.css">
+					<input type="url" value="//cdn.pub/bootswatch/3.3.2/yeti/bootstrap.min.css">
+				</td>
+			</tr>
+<!--
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					<input type="url" value="">
+				</td>
+			</tr>
+-->
+		</tbody>
+	</table>
+</article>
 <!-- -----------------------------------------------------------------
      Donation Modal Dialog
   -- ----------------------------------------------------------------- -->
-<div class="modal" id="donate">
+<aside class="modal" id="donate">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-body">
@@ -136,16 +232,16 @@ body {
 					<div class="tab-pane active" id="donate-one-time">
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 							<ul class="list-group">
-								<li class="list-group-item"><label><input type="radio" name="os0" value="1000JPY/One">&yen;1,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="1500JPY/One">&yen;1,500</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="2000JPY/One">&yen;2,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="3000JPY/One">&yen;3,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="5000JPY/One">&yen;5,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="10000JPY/One">&yen;10,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="15000JPY/One">&yen;15,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="30000JPY/One">&yen;30,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="50000JPY/One">&yen;50,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="100000JPY/One">&yen;100,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="1000JPY/One">&yen;1,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="1500JPY/One">&yen;1,500</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="2000JPY/One">&yen;2,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="3000JPY/One">&yen;3,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="5000JPY/One">&yen;5,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="10000JPY/One">&yen;10,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="15000JPY/One">&yen;15,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="30000JPY/One">&yen;30,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="50000JPY/One">&yen;50,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="100000JPY/One">&yen;100,000</label></li>
 								<li class="list-group-item text-center">
 									<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
 									<input type="hidden" name="cmd" value="_s-xclick">
@@ -158,16 +254,16 @@ body {
 					<div class="tab-pane" id="donate-monthly">
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 							<ul class="list-group">
-								<li class="list-group-item"><label><input type="radio" name="os0" value="1000JPY/Mo">&yen;1,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="1500JPY/Mo">&yen;1,500</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="2000JPY/Mo">&yen;2,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="3000JPY/Mo">&yen;3,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="5000JPY/Mo">&yen;5,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="10000JPY/Mo">&yen;10,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="15000JPY/Mo">&yen;15,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="30000JPY/Mo">&yen;30,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="50000JPY/Mo">&yen;50,000</label></li>
-								<li class="list-group-item"><label><input type="radio" name="os0" value="100000JPY/Mo">&yen;100,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="1000JPY/Mo">&yen;1,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="1500JPY/Mo">&yen;1,500</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="2000JPY/Mo">&yen;2,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="3000JPY/Mo">&yen;3,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="5000JPY/Mo">&yen;5,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="10000JPY/Mo">&yen;10,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="15000JPY/Mo">&yen;15,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="30000JPY/Mo">&yen;30,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="50000JPY/Mo">&yen;50,000</label></li>
+								<li class="list-group-item radio"><label><input type="radio" name="os0" value="100000JPY/Mo">&yen;100,000</label></li>
 								<li class="list-group-item text-center">
 									<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
 									<input type="hidden" name="cmd" value="_s-xclick">
@@ -182,24 +278,58 @@ body {
 			</div><!-- /modal-body -->
 		</div><!-- /modal-content -->
 	</div><!-- /modal-dialog -->
-</div><!-- /modal -->
+</aside><!-- /modal -->
 
+<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+<div id="fb-root"></div>
 <!-- -----------------------------------------------------------------
      Script Here
   -- ----------------------------------------------------------------- -->
-<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
-<script src="https://cdn.pub/jquery/2.1.3/dist/jquery.min.js"></script>
-<script src="https://cdn.pub/bootstrap/3.3.2/dist/js/bootstrap.min.js"></script>
-<script src="https://cdn.pub/bootswatch/3.3.2/assets/js/bootswatch.js"></script>
+<script src="//cdn.pub/jquery/2.1.3/dist/jquery.min.js"></script>
+<script src="//cdn.pub/bootstrap/3.3.2/dist/js/bootstrap.min.js"></script>
 
-
-<!-- 最後の +1 ボタン タグの後に次のタグを貼り付けてください。 -->
+<!-- hatena -->
+<script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<!-- other -->
 <script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
+$(function(){
+	$(document)
+		.on('click','input',function(event){
+console.log(event,this);
+			$(this).select();
+		})
+	;
+	setTimeout(function(){
+		//facebook
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+		//twitter
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+		//google+
+		(function() {
+			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			po.src = 'https://apis.google.com/js/plusone.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		})();
+	},0);
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18364584-18', 'auto');
+  ga('send', 'pageview');
 </script>
 </body>
 </html>

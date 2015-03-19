@@ -17,5 +17,8 @@ aws s3 sync ./ s3://cdn.pub/ \
 --size-only \
 --cache-control "max-age=60" \
 --exclude '*' \
---include 'index.html' 
+--include 'index.html' \
+--include 'robots.txt' \
+--include 'sitemap.xml' \
+ 
 
