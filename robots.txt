@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://cdn.pub/sitemap.xml
+
